@@ -16,10 +16,10 @@ Wallet-paid static intelligence for Android APK files. Upload an APK and receive
 
 ## Live API
 
-- Base URL: https://38bfec4f7711b6.lhr.life
-- Health: https://38bfec4f7711b6.lhr.life/health
-- OpenAPI: https://38bfec4f7711b6.lhr.life/openapi.json
-- Discovery: https://38bfec4f7711b6.lhr.life/.well-known/apk-intel.json
+- Base URL: https://e72cc5cd51fdfc.lhr.life
+- Health: https://e72cc5cd51fdfc.lhr.life/health
+- OpenAPI: https://e72cc5cd51fdfc.lhr.life/openapi.json
+- Discovery: https://e72cc5cd51fdfc.lhr.life/.well-known/apk-intel.json
 - Analysis endpoint: `POST /v1/apk/quick`
 
 ## Price
@@ -46,7 +46,7 @@ A request without payment returns HTTP `402` plus the machine-readable payment c
 curl -H "X-SOLANA-TRANSACTION: SIGNATURE" \\
   -H "Content-Type: application/vnd.android.package-archive" \\
   --data-binary "@app.apk" \\
-  https://38bfec4f7711b6.lhr.life/v1/apk/quick
+  https://e72cc5cd51fdfc.lhr.life/v1/apk/quick
 ```
 
 The receipt verifier checks transaction success, recipient USDC balance increase, minimum amount, finalization, freshness and replay protection.
